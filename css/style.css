@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+/* ************************************Carousel******************************************/
+
+section .carousel,.carousel-item,.carousel-item .active{
+    height:100vh;
+}
+section .carousel-item:nth-child(1) {   
+    background-image: url("G:/Web development/Coffee Shop/img/slide1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  section .carousel-item:nth-child(2) {
+    background-image: url("G:/Web development/Coffee Shop/img/slide2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+section .carousel-item:nth-child(3) {
+    background-image: url("G:/Web development/Coffee Shop/img/slide3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  section .carousel-caption h5{
+    font-family: 'Niconne', cursive;
+    font-weight: 1000; 
+    font-size:70px; 
+    animation-delay: 500ms;
+}
+section .carousel-caption p{
+    font-family: 'Italianno', cursive;
+    font-size: 50px; 
+     margin-bottom: 20%; 
+    color: #fff;
+    animation-delay: 1000ms;
+    font-weight: 600;
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+   section .carousel-caption h5{
+        font-family: 'Niconne', cursive;
+        font-weight: 1000; 
+        font-size:70px; 
+        animation-delay: 500ms;
+    }
+    section .carousel-caption p{
+        font-family: 'Italianno', cursive;
+        font-size: 50px; 
+        margin-bottom: 70%;
+        color: #fff;
+        font-weight: 600;
+        animation-delay: 1000ms;
+    }
+}
+@media only screen and (max-width:767px){
+    section .carousel-caption h5{
+        font-family: 'Niconne', cursive;
+        font-weight: 1000; 
+        font-size:50px; 
+        animation-delay: 500ms;
+    }
+    section .carousel-caption p{
+        font-family: 'Italianno', cursive;
+        font-size: 30px;  
+        color: #fff;
+        font-weight: 600;
+        animation-delay: 1000ms;
+    }
+}
+
+/* *********************************Navbar**************************************/
+.navbar{
+    transition:top 500ms ease-in-out;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+.navbar-brand{
+    font-family: 'Merienda One', cursive;
+    padding: 0px 40px;
+    font-size: 30px;
+}
+.navbar-toggler{
+    width: 40px;
+    height: 28px;    
+}
+.navbar-toggler .line{
+        width: 100%;
+        float: left;
+        height: 2px;
+        background-color: #000;
+        margin-bottom: 2px;
+}
+.navbar-toggler span:nth-child(3){
+    width:100%;
+    float: left;
+    height: 2px;
+    background: #000;
+}
+.navbar-nav{
+    margin-right: 30px;
+}
+.nav-link{
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    padding:10px 0px !important;
+}
+.nav-item{
+    position: relative;
+    overflow: hidden;
+    padding-left: 40px;
+}
+.nav-link::after{
+    position: absolute;
+    display: block;
+    content:'';
+    width:0;
+    height:3px;
+    background:#EDBB99;
+    transition: width .5s ;
+}
+.nav-link:hover::after{        
+        width:100%;
+}
+@media only screen and (max-width:768px){
+    .navbar-brand{
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+    .navbar-collapse{
+        background-color:rgba(0,0,0,0.5);
+        text-align: center;
+    }
+    .navbar-collapse .nav-link{
+        font-size: 15px;
+        color: #000;
+    }
+} 
+
+/********************************Section 1********************************/
+.section1{
+    position: relative;
+    background: rgb(82, 3, 3,0.2);
+}
+.header{
+    font-size:30px;
+    padding-top:30px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+}
+.sub-header{
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    color:#000;
+    z-index: 2;
+    font-family: 'Libre Baskerville', serif;
+}
+.sub-header::after{
+    position: absolute;
+    display: block;
+    content:'';
+    left:45%;
+    bottom: -20px;
+    text-align: center;
+    width:100px;
+    height:2px;
+    background:#000;
+}
+.section1 .container .row{
+    padding-top: 60px;
+    padding-bottom: 60px;    
+}
+.section1 .container .card{
+    z-index: 2;   
+}
+.section1 .container .card-title{
+    font-family: 'Pacifico', cursive;
+    font-size:20px;
+}
+.section1 .container .card-text{
+    font-family: 'Crimson Text', serif;
+}
+.section1 .container .card a{
+    color:#000;
+}
+@media only screen and (max-width:767px){
+    .section1 h1{
+        font-size: 20px;
+    }
+    .section1 h1::after{
+        left:150px;
+    }
+}
+
+/**************************************Section 2************************************/
+
+.section2{
+    position: relative;
+    width: 100%; 
+}
+.section2{
+    background: url("G:/Web development/Coffee Shop/img/section1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.overlay{
+    position: absolute;
+    content: '';
+    background:rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    left:0;
+    z-index:1;
+    overflow: hidden;
+}
+.section2 .container{
+position: relative;
+z-index:3;
+}
+.section2 .container .row{
+padding-top:150px; 
+padding-bottom:100px;
+position: relative;
+}
+.section2 .container .row img{
+    width:300px;
+    height:420px;
+    display: block;
+    position: relative;
+}
+.section2 .container .row .text-center::before{
+    position: absolute;
+    content: '';
+    display: block;
+    top:-50px;
+    left:50px;
+    border:10px solid #fff;
+    width:55%;
+    height: 100%;
+}
+.section2 .header{
+    color:#fff;
+}
+.section2 h1{
+    color:#fff;
+}
+.section2 h1::after{
+   left:0;
+    background:#fff;
+}
+.section2 .text{
+    color:#fff;
+    padding-top:40%;
+    font-family: 'Crimson Text', serif;
+}
+.section2 .btn{
+    margin-top:10%;
+    color:#fff;
+    border: 2px solid #fff; 
+}
+.section2 .btn:hover{
+    background:#fff;
+    color:#000;
+}
+@media only screen and (max-width:1200px)
+{
+    .section2 .container .row .text-center::before{
+       display: none;
+    }
+    .section2 .text{
+        padding-top:45%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+    .section2 .sub-header{
+        font-size: 25px;
+    }
+    .section2 .text{
+        padding-top:55%;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .section2 .sub-header{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:767px)
+{
+    .section2 .sub-header{
+        font-size: 25px;
+    }
+    .section2 .text{
+        padding-top:50%;
+    }
+}
+
+/* *************************************Section 3*************************************** */
+.section3{
+    position: relative;
+    background: rgb(82, 3, 3,0.2);
+}
+.section3 .row{
+    padding: 50px 0px; 
+}
+.section3 .card{
+    background:transparent;
+    border:none;
+}
+.section3 .card .icon{
+    width:100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    position: relative;
+}
+.section3 .card .icon i{
+    position: absolute;
+    top:20%;
+    left:20%;
+    font-size: 50px;
+}
+.section3 .card .card-title{
+    text-transform: uppercase;
+    font-size:20px;
+    font-family: 'Libre Baskerville', serif;
+}
+.section3 .card .card-text{
+    font-family: 'Crimson Text', serif;
+}
+@media only screen and (max-width:767px){
+    .section3 h1{
+        font-size: 25px;
+    }
+    .section3 h1::after{
+        left:150px;
+    }
+}
+/* ************************************Section 4********************************* */
+.section4 {
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+.section4{
+     background:url("/Web development/Coffee Shop/img/section4.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.section4 .carousel{   
+    z-index: 2;
+}
+.section4 .carousel-inner{
+    z-index: 2;
+    height: 400px;
+}
+.section4 .carousel-caption{
+    color: #fff;
+    z-index: 2;
+    top:5%;
+}
+.section4 .carousel-caption p{
+    color: #fff;
+    z-index: 2;
+    font-size:25px;
+    font-family: 'Dancing Script', cursive;
+}
+.section4 .carousel-caption .character{
+    z-index: 2;
+      width:100px;
+      height:100px;
+      border: none;
+      border-radius: 50%;
+    overflow: hidden;
+  }
+  .section4 .carousel-caption .character img{
+      width:100px;
+      height:120px;
+      border-radius: 50%;
+  }
+  @media only screen and (max-width:767px){ 
+    .section4 .carousel-caption p{
+        font-size: 16px;
+    }
+  }
+
+  /* ************************************Section 4*********************************** */
+  .section5{
+    position: relative;
+    background: rgb(82, 3, 3,0.2);
+  }
+
+.section5 .row{
+    padding: 50px 0px; 
+}
+  .section5 .row img{
+    width:150px;
+    height:100px;
+  }
+  @media only screen and (max-width:575px){
+      .section5 .row img{
+          margin-left:100px;
+      }
+      .section5 .sub-header{
+          font-size:30px;
+      }
+      .section5 .sub-header::after{
+          left:150px;
+      }
+  }
+/* *******************************************Footer************************************* */
+footer{
+    position: relative;
+    background: url("G:/Web development/Coffee Shop/img/footer.jpg");
+    background-size: cover;
+    background-position: center;
+}
+footer .row h1{
+    position: relative;
+    font-family: 'Merienda One', cursive;
+    color:#fff;
+    z-index:3;
+}
+footer .row .copyright{
+    position: relative;
+    color:#fff;
+    z-index: 3;
+}
+footer .timing .card{
+    background: transparent;
+    color:#fff;
+    border:2px solid #fff;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+    z-index: 2;
+}
+footer .address{
+    z-index:3;
+}
+footer .address .card{
+    background: transparent;
+    font-family: 'Merienda One', cursive;
+    color: #fff
+}
+footer .social{
+    z-index:3;
+}
+footer .social .text-center a{ 
+    font-size: 30px;
+    color: #fff;
+}
+@media only screen and (max-width:767px){
+    footer .row .brand{
+        padding-top:30px;
+        text-align: center;
+    }
+}
+
+/* **********************************Reserver Page************************************** */
+/* *************************************Heading******************************************* */
+.heading{
+    background: url("G:/Web development/Coffee Shop/img/footer.jpg");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+} 
+.heading .container .col-12{
+    margin:130px 0;
+}
+ .heading h1{
+    position: relative;
+    text-align: center;
+    font-weight: 800;
+    color:#fff;
+    z-index: 2;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+} 
+/* *******************************************Reserve****************************************** */
+.reserve{
+    position: relative;
+    background: rgb(82, 3, 3,0.2);
+}
+.reserve .sub-header{
+    padding-top:20px
+}
+.reserve .container .row{
+    padding:50px 0;
+}
+.reserve .container .row input,.reserve .container .row a{
+    width:100%;
+    margin:10px 0;
+    padding: 10px 20px;
+    font-family: 'EB Garamond', serif;
+}
+.reserve .btn{
+    margin-top:10%;
+    color:#000;
+    border: 2px solid #fff; 
+}
+.reserve .btn:hover{
+    background:#fff;
+    color:#000;
+}
+@media only screen and (max-width:575px){
+    .reserve .sub-header{
+        font-size:25px;
+    }
+    .reserve .sub-header::after{
+        left:150px;
+    }
+}
+
+/* ********************************************Booking************************************ */
+.booking{
+    position: relative;
+    background: #fff;
+}
+.booking .row{
+    padding: 50px 0px; 
+}
+.booking .card{
+    border: none;
+}
+.booking .card-title{
+    font-family: 'Bree Serif', serif;
+}
+.booking .card-text{
+    font-family: 'Crimson Text', serif;
+}
+.booking .col-md-2{
+    padding:100px 0;
+    background: rgb(82, 3, 3,0.2);
+    font-family: 'Lobster Two', cursive;
+}
+@media only screen and (max-width:575px){
+    .booking .sub-header{
+        font-size:25px;
+    }
+    .booking .sub-header::after{
+        left:150px;
+    }
+}
+/* ***************************************Gallery******************************* */
+/* *****************************************Gallery******************************** */
+section{
+    position: relative;
+    background: rgb(82, 3, 3,0.2);
+}
+@media only screen and (max-width:575px){
+    section .sub-header{
+        font-size:25px;
+    }
+    section .sub-header::after{
+        left:150px;
+    }
+}
+.main{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.main .gallery{
+	position: relative;
+	height: auto;
+	width: 90%;
+	margin: auto;
+	padding: 45px 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto; 
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+}
+.main .gallery .img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+	border-radius: 2px;
+}
+.main .gallery .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(6n+7){
+	grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+.main .gallery .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+.main .gallery .img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px){
+	.main h1{
+		font-size: 1.8em;
+		width: 400px;
+	}
+	.main p{
+		font-size: 1.2em;
+	}
+	.main .gallery{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+}
+@media only screen and (max-width: 430px){
+	.main h1{
+		font-size: 1.2em;
+		width: 300px;
+	}
+	.main p{
+		font-size: 0.89em;
+	}
+	.main .gallery{
+		display: block;
+	}
+	.main .gallery .img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin:2% 0;
+	}
+	.main .gallery .img img{
+		display: block;
+		filter: brightness(1) grayscale(0);
+	}
+}
+
+/* ****************************************About*********************************** */
+/* ****************************************About************************************ */
+.about .row{
+    padding:40px 0;
+}
+
+/* *****************************************Menu*************************************** */
+/* ******************************************Menu***************************************** */
+.menu .row{
+    padding: 40px 0;
+}
+.menu .col-lg-12{
+    margin: 5px 0;
+}
+.menu .col-lg-12 h4{
+    font-family: 'Berkshire Swash', cursive;
+}
+.menu .col-lg-12 p{
+    font-family: 'Philosopher', sans-serif;
+}   
+.menu .dotted{
+    position: relative;
+    width:50%;
+    height: 3px;
+    border-bottom: dotted;
+}
+@media only screen and (max-width:767px){
+    .menu .dotted{
+        width:25%;
+    }
+    .menu .col-lg-12 p{
+        display: none
+    }
+}
